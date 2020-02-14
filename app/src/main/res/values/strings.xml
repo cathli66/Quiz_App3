@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Quiz App 2</string>
+    <string name="hello_tj">Hello!</string>
+    <string name="name_hint">What is your name?</string>
+    <string name="click_button">Submit</string>
+    <string name="color_hint">What is your favorite color?</string>
+    <string name="click_button2">Change Color</string>
+    <string name="color_info">Colors: aqua, black, blue, cyan, darkgray, fuchsia, gray, green, lightgray, lime, magenta, maroon, navy, olive, purple, red, silver, teal, white, yellow.</string>
+    <string name="num_start">You haven\'t pressed the color button yet.</string>
+    <string name="click_button3">Random Color</string>
+    <string name="randomColorText">Set background to a random color!</string>
+    <string name="next_activity">Next</string>
+    <string name="test">testing testing 123</string>
+    <string name="text_1">Press me!</string>
+    <string name="text_2">No, press me!</string>
+    <string name="text_3">Press me please!!</string>
+    <string name="text_4">ME!! PRESS ME!!!</string>
+    <string-array name="colors_array">
+        <item>Aqua</item>
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Darkgray</item>
+        <item>Fuchsia</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Lightgray</item>
+        <item>Lime</item>
+        <item>Magenta</item>
+        <item>Maroon</item>
+        <item>Navy</item>
+        <item>Olive</item>
+        <item>Purple</item>
+        <item>Red</item>
+        <item>Silver</item>
+        <item>Teal</item>
+        <item>White</item>
+        <item>Yellow</item>
+    </string-array>
+</resources>
