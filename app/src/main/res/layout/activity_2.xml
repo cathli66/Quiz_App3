@@ -7,6 +7,20 @@
     android:id="@+id/layout"
     tools:context=".Activity2">
 
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:max="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
@@ -14,9 +28,21 @@
         android:text="@string/text_1"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
+        android:layout_below="@+id/seekBar1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
     />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/seekBar1"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 
     <TextView
         android:id="@+id/text2"
@@ -25,7 +51,19 @@
         android:text="@string/text_2"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
+        android:layout_below="@+id/seekBar1"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/seekBar1"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
         app:layout_constraintRight_toRightOf="parent"
         />
 
@@ -36,7 +74,19 @@
         android:text="@string/text_3"
         android:layout_marginBottom="15dp"
         android:layout_marginStart="15dp"
+        android:layout_below="@+id/seekBar1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/score3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/seekBar1"
+        app:layout_constraintBottom_toTopOf="@+id/text3"
         app:layout_constraintLeft_toLeftOf="parent"
         />
 
@@ -47,7 +97,19 @@
         android:text="@string/text_4"
         android:layout_marginBottom="15dp"
         android:layout_marginEnd="15dp"
+        android:layout_below="@+id/seekBar1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/score4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/seekBar1"
+        app:layout_constraintBottom_toTopOf="@+id/text4"
         app:layout_constraintRight_toRightOf="parent"
         />
 
