@@ -22,7 +22,6 @@ public class Activity2 extends AppCompatActivity {
     TextView score4;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-    int s1, s2, s3, s4 = 0;
 
     SeekBar seekBar;
 
@@ -42,11 +41,12 @@ public class Activity2 extends AppCompatActivity {
         seekBar = (SeekBar) findViewById(R.id.seekBar1);
         sharedPreferences = getSharedPreferences("Settings", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
+        editor.apply();
 
-        s1 = sharedPreferences.getInt("score1", 0);
-        s2 = sharedPreferences.getInt("score2", 0);
-        s3 = sharedPreferences.getInt("score3", 0);
-        s4 = sharedPreferences.getInt("score4", 0);
+        score1.setText(""+sharedPreferences.getInt("score1", 0));
+        score2.setText(""+sharedPreferences.getInt("score2", 0));
+        score3.setText(""+sharedPreferences.getInt("score3", 0));
+        score4.setText(""+sharedPreferences.getInt("score4", 0));
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int size = 0;
@@ -85,30 +85,34 @@ public class Activity2 extends AppCompatActivity {
     class Listener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            editor.putInt("score1", s1+1);
-            editor.putInt("score2", s2+1);
-            editor.putInt("score3", s3+1);
-            editor.putInt("score4", s4+1);
-            editor.apply();
+
             Log.i("textnumber", "" + v.getId());
             int id = v.getId();
-            TextView tv = (TextView) v;
-            tv.setText((Integer.parseInt(tv.getText().toString()) + 1) + "");
+
             String textnum = "";
             int pressednum = 0;
             if (id % 10 == 7) {
+                editor.putInt("score1", sharedPreferences.getInt("score1", 0)+1);
                 textnum = "1";
                 pressednum = sharedPreferences.getInt("score1", 0);
             } else if (id % 10 == 8) {
+                editor.putInt("score2", sharedPreferences.getInt("score2", 0)+1);
                 textnum = "2";
                 pressednum = sharedPreferences.getInt("score2", 0);
             } else if (id % 10 == 9) {
+                editor.putInt("score3", sharedPreferences.getInt("score3", 0)+1);
                 textnum = "3";
                 pressednum = sharedPreferences.getInt("score3", 0);
             } else {
+                editor.putInt("score4", sharedPreferences.getInt("score4", 0)+1);
                 textnum = "4";
                 pressednum = sharedPreferences.getInt("score4", 0);
             }
+            editor.apply();
+
+            TextView tv = (TextView) v;
+            tv.setText(pressednum + "");
+
             Toast.makeText(getApplicationContext(), "You've pressed button " + textnum + " this many times: " + pressednum, Toast.LENGTH_SHORT).show();
 //        v.getTag();
 //        TextView tv = (TextView)v;
