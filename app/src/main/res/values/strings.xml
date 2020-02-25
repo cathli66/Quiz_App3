@@ -9,12 +9,18 @@
     <string name="num_start">You haven\'t pressed the color button yet.</string>
     <string name="click_button3">Random Color</string>
     <string name="randomColorText">Set background to a random color!</string>
-    <string name="next_activity">Next</string>
+    <string name="act2">Press for Lab03</string>
     <string name="test">testing testing 123</string>
     <string name="text_1">Press me!</string>
     <string name="text_2">No, press me!</string>
     <string name="text_3">Press me please!!</string>
     <string name="text_4">ME!! PRESS ME!!!</string>
+    <string name="view_1">Hi!</string>
+    <string name="view_2">Hello</string>
+    <string name="view_3">Hey there</string>
+    <string name="act3">Press for Layout 2</string>
+    <string name="button_4">Press me!</string>
+    <string name="act4">Press for Layout 3</string>
     <string-array name="colors_array">
         <item>Aqua</item>
         <item>Black</item>

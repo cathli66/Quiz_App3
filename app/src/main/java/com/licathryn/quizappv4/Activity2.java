@@ -1,10 +1,12 @@
 package com.licathryn.quizappv4;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +26,8 @@ public class Activity2 extends AppCompatActivity {
     SharedPreferences.Editor editor;
 
     SeekBar seekBar;
+    Button layout2;
+    Button layout3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +83,22 @@ public class Activity2 extends AppCompatActivity {
         score2.setOnClickListener(x);
         score3.setOnClickListener(x);
         score4.setOnClickListener(x);
+
+        layout2=findViewById((R.id.activity3));
+        layout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity3();
+            }
+        });
+        layout3=findViewById((R.id.activity4));
+        layout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity4();
+            }
+        });
+
     }
 
 
@@ -118,6 +138,18 @@ public class Activity2 extends AppCompatActivity {
 //        TextView tv = (TextView)v;
 //        tv.setText();
         }
+    }
+    public void openActivity3() {
+        Intent intent=new Intent(this, Activity3.class);
+        startActivity(intent);
+        // https://www.youtube.com/watch?v=bgIUdb-7Rqo&vl=en
+        // https://developer.android.com/guide/topics/manifest/manifest-intro.html
+    }
+    public void openActivity4() {
+        Intent intent=new Intent(this, Activity4.class);
+        startActivity(intent);
+        // https://www.youtube.com/watch?v=bgIUdb-7Rqo&vl=en
+        // https://developer.android.com/guide/topics/manifest/manifest-intro.html
     }
 
 }
