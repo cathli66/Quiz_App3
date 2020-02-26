@@ -25,22 +25,72 @@
         android:id="@+id/activity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
         android:text="@string/act3"
         android:textColor="#318214"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintRight_toLeftOf="@+id/activity5"
         app:layout_constraintTop_toBottomOf="@+id/seekBar1" />
 
     <Button
         android:id="@+id/activity4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         android:text="@string/act4"
         android:textColor="#318214"
+        android:textSize="15sp"
+        app:layout_constraintRight_toLeftOf="@+id/activity6"
+        app:layout_constraintTop_toBottomOf="@+id/activity3" />
+
+    <Button
+        android:id="@+id/activity5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/act5"
+        android:textColor="#318214"
+        android:textSize="15sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar1" />
+
+    <Button
+        android:id="@+id/activity6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/act6"
+        android:textColor="#318214"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity5" />
+
+    <Button
+        android:id="@+id/activity7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/act7"
+        android:textColor="#318214"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/activity5"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar1" />
+
+    <Button
+        android:id="@+id/activity8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/act8"
+        android:textColor="#318214"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/activity6"
         app:layout_constraintTop_toBottomOf="@+id/activity3" />
 
     <TextView

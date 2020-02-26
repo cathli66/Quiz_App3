@@ -28,6 +28,10 @@ public class Activity2 extends AppCompatActivity {
     SeekBar seekBar;
     Button layout2;
     Button layout3;
+    Button layout4;
+    Button layout5;
+    Button layout6;
+    Button layout7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +102,20 @@ public class Activity2 extends AppCompatActivity {
                 openActivity4();
             }
         });
-
+        layout4=findViewById((R.id.activity5));
+        layout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity5();
+            }
+        });
+        layout5=findViewById((R.id.activity6));
+        layout5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity6();
+            }
+        });
     }
 
 
@@ -148,8 +165,13 @@ public class Activity2 extends AppCompatActivity {
     public void openActivity4() {
         Intent intent=new Intent(this, Activity4.class);
         startActivity(intent);
-        // https://www.youtube.com/watch?v=bgIUdb-7Rqo&vl=en
-        // https://developer.android.com/guide/topics/manifest/manifest-intro.html
     }
-
+    public void openActivity5() {
+        Intent intent=new Intent(this, Activity5.class);
+        startActivity(intent);
+    }
+    public void openActivity6() {
+        Intent intent=new Intent(this, Activity6.class);
+        startActivity(intent);
+    }
 }
