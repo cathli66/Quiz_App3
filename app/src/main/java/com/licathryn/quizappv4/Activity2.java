@@ -116,6 +116,20 @@ public class Activity2 extends AppCompatActivity {
                 openActivity6();
             }
         });
+        layout6=findViewById((R.id.activity7));
+        layout6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity7();
+            }
+        });
+        layout7=findViewById((R.id.activity8));
+        layout7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity8();
+            }
+        });
     }
 
 
@@ -172,6 +186,14 @@ public class Activity2 extends AppCompatActivity {
     }
     public void openActivity6() {
         Intent intent=new Intent(this, Activity6.class);
+        startActivity(intent);
+    }
+    public void openActivity7() {
+        Intent intent=new Intent(this, Activity7.class);
+        startActivity(intent);
+    }
+    public void openActivity8() {
+        Intent intent=new Intent(this, Activity8.class);
         startActivity(intent);
     }
 }
