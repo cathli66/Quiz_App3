@@ -32,6 +32,7 @@ public class Activity2 extends AppCompatActivity {
     Button layout5;
     Button layout6;
     Button layout7;
+    Button lab05;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,46 +89,53 @@ public class Activity2 extends AppCompatActivity {
         score3.setOnClickListener(x);
         score4.setOnClickListener(x);
 
-        layout2=findViewById((R.id.activity3));
+        layout2=findViewById(R.id.activity3);
         layout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity3();
             }
         });
-        layout3=findViewById((R.id.activity4));
+        layout3=findViewById(R.id.activity4);
         layout3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity4();
             }
         });
-        layout4=findViewById((R.id.activity5));
+        layout4=findViewById(R.id.activity5);
         layout4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity5();
             }
         });
-        layout5=findViewById((R.id.activity6));
+        layout5=findViewById(R.id.activity6);
         layout5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity6();
             }
         });
-        layout6=findViewById((R.id.activity7));
+        layout6=findViewById(R.id.activity7);
         layout6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity7();
             }
         });
-        layout7=findViewById((R.id.activity8));
+        layout7=findViewById(R.id.activity8);
         layout7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity8();
+            }
+        });
+        lab05=findViewById(R.id.lab05);
+        lab05.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLab05();
             }
         });
     }
@@ -194,6 +202,10 @@ public class Activity2 extends AppCompatActivity {
     }
     public void openActivity8() {
         Intent intent=new Intent(this, Activity8.class);
+        startActivity(intent);
+    }
+    public void openLab05() {
+        Intent intent=new Intent(this, ActivityLab05.class);
         startActivity(intent);
     }
 }

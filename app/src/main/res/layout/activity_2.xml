@@ -93,6 +93,18 @@
         app:layout_constraintLeft_toRightOf="@+id/activity6"
         app:layout_constraintTop_toBottomOf="@+id/activity3" />
 
+    <Button
+        android:id="@+id/lab05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lab05text"
+        android:textColor="#318214"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity6" />
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
